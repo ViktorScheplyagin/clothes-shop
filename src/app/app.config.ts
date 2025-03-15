@@ -1,6 +1,5 @@
 import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
 import { provideRouter } from '@angular/router';
-import { provideNoopAnimations } from '@angular/platform-browser/animations';
 import {
   provideClientHydration,
   withNoHttpTransferCache,
@@ -16,7 +15,6 @@ export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideRouter(routes),
-    provideNoopAnimations(),
     provideClientHydration(withNoHttpTransferCache()),
     provideHttpClient(withInterceptorsFromDi()),
   ],

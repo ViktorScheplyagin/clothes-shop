@@ -1,0 +1,31 @@
+<div class="container mx-auto">
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>Products</mat-card-title>
+            <mat-card-subtitle>Browse our collection</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <p class="my-4">
+                Explore our wide range of products. Filter by category, price, or popularity.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+                @for (i of [1, 2, 3, 4, 5, 6]; track i) {
+                <mat-card class="product-card">
+                    <mat-card-header>
+                        <mat-card-title>Product {{ i }}</mat-card-title>
+                        <mat-card-subtitle>${{ i * 10 }}.99</mat-card-subtitle>
+                    </mat-card-header>
+                    <mat-card-content>
+                        <p>This is a sample product description.</p>
+                    </mat-card-content>
+                    <mat-card-actions>
+                        <button mat-button color="primary">Add to Cart</button>
+                        <button mat-button>Details</button>
+                    </mat-card-actions>
+                </mat-card>
+                }
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>
