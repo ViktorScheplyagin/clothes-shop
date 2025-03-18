@@ -36,7 +36,7 @@
                         <p>{{ product.description }}</p>
                     </mat-card-content>
                     <mat-card-actions class="flex flex-wrap gap-2">
-                        <button mat-button color="primary">Add to Cart</button>
+                        <button mat-button color="primary" (click)="addToCart(product)">Add to Cart</button>
                         <button mat-button (click)="openProductDetails(product)">Details</button>
                     </mat-card-actions>
                 </mat-card>
