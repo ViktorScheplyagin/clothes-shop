@@ -2,4 +2,13 @@
 @import "tailwindcss";
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Add smooth transitions for theme switching */
+.mat-drawer, .mat-toolbar, .mat-card {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}

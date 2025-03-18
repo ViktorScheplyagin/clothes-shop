@@ -6,6 +6,9 @@
     </button>
     <span class="ml-2">Clothes Shop</span>
     <span class="flex-grow-1"></span>
+    <button mat-icon-button aria-label="Toggle theme" (click)="themeService.toggleTheme()">
+      <mat-icon>{{ themeService.isDarkTheme() ? 'dark_mode' : 'light_mode' }}</mat-icon>
+    </button>
     <a mat-icon-button aria-label="Shopping cart" routerLink="/cart">
       <mat-icon [matBadge]="cartService.itemCount()" [matBadgeHidden]="cartService.itemCount() === 0"
         matBadgeColor="accent">shopping_cart</mat-icon>
