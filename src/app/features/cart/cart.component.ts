@@ -66,6 +66,4 @@ export class CartComponent {
     // Navigate to home or products page
     this.router.navigate(['/']);
   }
-
-  protected readonly console = console;
 }

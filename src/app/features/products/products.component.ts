@@ -45,8 +45,6 @@ export class ProductsComponent implements OnInit {
     this.cartService.addToCart(product, quantity);
     this.snackBar.open(`${product.name} added to cart`, 'Close', {
       duration: 3000,
-      horizontalPosition: 'end',
-      verticalPosition: 'top',
     });
   }
 }

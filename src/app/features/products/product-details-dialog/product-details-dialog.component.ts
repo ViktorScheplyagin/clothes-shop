@@ -16,7 +16,6 @@ export class ProductDetailsDialogComponent {
   ) {}
 
   addToCart() {
-    console.log("addToCart");
     this.dialogRef.close({ action: "add_to_cart", product: this.product });
   }
 }
