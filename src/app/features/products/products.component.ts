@@ -1,7 +1,6 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MaterialModule } from '@/shared/material.module';
-import { ProductRepository } from '@/data/repositories/product.repository';
 import {ProductService} from '@/data/services/product.service';
 import {MatDialog} from '@angular/material/dialog';
 import {Product} from '@/data/models/product.model';

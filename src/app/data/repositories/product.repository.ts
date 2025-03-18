@@ -50,7 +50,7 @@ export class ProductRepository {
         this.loading.set(false);
         this.lastFetchTime.set(Date.now());
       },
-      error: (error) => {
+      error: () => {
         console.log('Error retrieving products');
         this.error.set('Failed to retrieve products');
         this.loading.set(false);
