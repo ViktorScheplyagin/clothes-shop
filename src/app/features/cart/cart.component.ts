@@ -11,7 +11,6 @@ import { MatSnackBar } from '@angular/material/snack-bar';
   standalone: true,
   imports: [CommonModule, MaterialModule, FormsModule, RouterModule],
   templateUrl: './cart.component.html',
-  styleUrl: './cart.component.css',
 })
 export class CartComponent {
   private cartService = inject(CartService);
